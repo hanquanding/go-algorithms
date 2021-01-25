@@ -1,2 +1,2 @@
-# go-algorithms
-golang常用数据结构和算法整理
+## go-algorithms
+Go常用数据结构和算法整理

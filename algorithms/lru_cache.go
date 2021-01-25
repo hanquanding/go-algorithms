@@ -1,8 +1,7 @@
-package main
+package algorithms
 
 import (
 	"container/list"
-	"fmt"
 )
 
 type LRUCache struct {
@@ -10,6 +9,7 @@ type LRUCache struct {
 	list  *list.List               // 存储数据的双向链表
 	cache map[string]*list.Element // 链表的map索引
 }
+
 type Entry struct {
 	Key   string
 	Value interface{}
@@ -78,13 +78,4 @@ func (c *LRUCache) Remove(key string) {
 		c.list.Remove(e)
 		delete(c.cache, e.Value.(*Entry).Key)
 	}
-}
-func main() {
-	cache := NewLRUCache(2)
-	cache.Add("aa", 1)
-	cache.Add("bb", 2)
-	cache.Add("cc", 3)
-	fmt.Println(cache.Get("aa"))
-	fmt.Println(cache.Get("bb"))
-	fmt.Println(cache.Get("cc"))
 }

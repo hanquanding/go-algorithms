@@ -3,15 +3,15 @@ package tests
 import (
 	"testing"
 
-	"github.com/hqd8080/go-algorithms/algorithms"
+	link "github.com/hqd8080/go-algorithms/algorithms/link"
 )
 
 func TestLink(t *testing.T) {
-	var head *algorithms.Node
-	stu1 := algorithms.Node{algorithms.Student{101, "aa"}, nil}
-	stu2 := algorithms.Node{algorithms.Student{102, "bb"}, nil}
-	stu3 := algorithms.Node{algorithms.Student{103, "cc"}, nil}
-	stu4 := algorithms.Node{algorithms.Student{104, "dd"}, nil}
+	var head *link.Node
+	stu1 := link.Node{link.Student{101, "aa"}, nil}
+	stu2 := link.Node{link.Student{102, "bb"}, nil}
+	stu3 := link.Node{link.Student{103, "cc"}, nil}
+	stu4 := link.Node{link.Student{104, "dd"}, nil}
 
 	// 创建新链表
 	head = head.Create()

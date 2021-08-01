@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hqd8080/go-algorithms/algorithms"
+	algorithms "github.com/hqd8080/go-algorithms/algorithms/sort"
 )
 
 func TestQuickSort(t *testing.T) {

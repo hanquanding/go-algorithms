@@ -1,3 +1,9 @@
+/**
+ * @Author: hqd
+ * @Date: 2021/8/1 20:01
+ * @Description: 链表操作
+ */
+
 package algorithms
 
 import "fmt"
